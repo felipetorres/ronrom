@@ -9,3 +9,5 @@ Este repositório guarda só a versão compilada que o GitHub Pages serve. Depoi
 O jogo não coleta dados: o progresso fica salvo só no aparelho.
 
 Terceiros: three.js (MIT, cabeçalho no próprio arquivo) e as fontes Baloo 2, Nunito e DM Mono (SIL Open Font License, textos em `fonts/`).
+
+Os sons de gatos são gravações em domínio público (CC0 1.0) publicadas no Freesound.
