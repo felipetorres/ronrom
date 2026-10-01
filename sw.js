@@ -1,4 +1,4 @@
-const VERSION = 'ronrom-33343919cb';
+const VERSION = 'ronrom-b20f007ec0';
 const FILES = ["./","./fonts/baloo2-224589.woff2","./fonts/dmmono-42078d.woff2","./fonts/dmmono-9bb717.woff2","./fonts/nunito-b8db19.woff2","./icons/apple-touch-icon.png","./icons/favicon-32.png","./icons/favicon-64.png","./icons/icon-192.png","./icons/icon-512.png","./icons/maskable-192.png","./icons/maskable-512.png","./index.html","./manifest.webmanifest","./three.module.min.js"];
 
 self.addEventListener('install', (e) => {
