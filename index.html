@@ -120,7 +120,7 @@ canvas#game { position: fixed; inset: 0; width: 100%; height: 100%; display: blo
 #ui { font-family: var(--body); }
 .hud-layer { position: absolute; inset: 0; overflow: hidden; }
 .hud-chip { position: absolute; display: flex; align-items: center; gap: 10px; padding: 8px 14px 8px 10px; border-radius: 16px; background: var(--panel); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); box-shadow: 0 6px 24px rgba(20, 12, 30, 0.25); }
-.hud-place { top: calc(16px + env(safe-area-inset-top, 0px)); left: 16px; max-width: min(360px, calc(100vw - 32px)); }
+.hud-place { top: calc(16px + env(safe-area-inset-top, 0px)); left: calc(16px + env(safe-area-inset-left, 0px)); max-width: min(360px, calc(100vw - 32px)); }
 .hud-time-icon { width: 30px; height: 30px; flex: none; }
 .hud-time-icon svg { width: 100%; height: 100%; }
 .hud-place-name { font-family: var(--display); font-weight: 700; font-size: 15px; line-height: 1.1; letter-spacing: 0.01em; }
@@ -310,7 +310,7 @@ canvas#game { touch-action: none; -webkit-user-select: none; user-select: none; 
 .mode-touch .hud-companions { right: 76px; top: calc(12px + env(safe-area-inset-top, 0px)); }
 .mode-touch .toasts { top: calc(66px + env(safe-area-inset-top, 0px)); width: min(440px, calc(100vw - 180px)); }
 .mode-touch .toast { font-size: 13px; padding: 7px 12px; }
-.mode-touch .hud-place { top: calc(10px + env(safe-area-inset-top, 0px)); left: 12px; padding: 6px 12px 6px 8px; }
+.mode-touch .hud-place { top: calc(10px + env(safe-area-inset-top, 0px)); left: calc(12px + env(safe-area-inset-left, 0px)); padding: 6px 12px 6px 8px; }
 .mode-touch .hud-place-name { font-size: 13px; }
 .mode-touch .hotbar-label { display: none; }
 .compass { position: absolute; left: 50%; top: calc(16px + env(safe-area-inset-top, 0px)); transform: translateX(-50%); width: min(420px, calc(100vw - 520px)); min-width: 220px; height: 30px; border-radius: 99px; background: linear-gradient(90deg, transparent, rgba(36,28,52,.55) 15%, rgba(36,28,52,.55) 85%, transparent); overflow: hidden; }
