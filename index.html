@@ -2,7 +2,7 @@
 <html lang="pt-BR">
 <head>
 <meta charset="utf-8">
-<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'sha256-lRjxGbbZK0beOT/ENOXy8LpwvQW+EpIpuwYGQkZ/aS4=' 'sha256-o3ltp+zYoDATV09EKfnQOHyQnqJ++HPAP5QG2PqQQLY=' 'sha256-NEWG+biatYpM4qCDRikHmqnAWzLrTAsmMvjBNYcp1JM=' 'sha256-SaX4f/LKxf1nabi03agjndeB9+aMbBNjyeP4xorSyQU=' https://challenges.cloudflare.com; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; font-src 'self'; connect-src 'self' https://byalneictaqokspggjzn.supabase.co wss://byalneictaqokspggjzn.supabase.co; frame-src https://challenges.cloudflare.com; worker-src 'self'; manifest-src 'self'; object-src 'none'; base-uri 'none'; form-action 'self'">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'sha256-lRjxGbbZK0beOT/ENOXy8LpwvQW+EpIpuwYGQkZ/aS4=' 'sha256-o3ltp+zYoDATV09EKfnQOHyQnqJ++HPAP5QG2PqQQLY=' 'sha256-bfBTBClT678Uqv0UFb577zIqP9hcqSbW+Kycf0Wmt5k=' 'sha256-SaX4f/LKxf1nabi03agjndeB9+aMbBNjyeP4xorSyQU=' https://challenges.cloudflare.com; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; font-src 'self'; connect-src 'self' https://byalneictaqokspggjzn.supabase.co wss://byalneictaqokspggjzn.supabase.co; frame-src https://challenges.cloudflare.com; worker-src 'self'; manifest-src 'self'; object-src 'none'; base-uri 'none'; form-action 'self'">
 <meta name="referrer" content="strict-origin-when-cross-origin">
 <style id="framed">html{display:none}</style>
 <script>if(self===top)document.getElementById('framed').remove()</script>
@@ -3712,8 +3712,11 @@ vec3 catAlbedo(vec3 p, vec4 pat, vec4 fur, float h) {
     col *= 1.0 - tm * 0.06;
   }
   if (uSilver.x > 0.5 && uSilver.y > 0.5) {
-    float k = 0.64 + 0.24 * smoothstep(0.25, 0.85, pat.w) - 0.3 * smoothstep(0.35, 0.9, fur.z);
-    col = mix(col, vec3(0.8, 0.82, 0.86), clamp(k * mix(1.0, 0.85, h), 0.0, 0.9));
+    float wisp = noise3(p * 13.0 + uSeed * 2.0) * 0.7 + noise3(p * 31.0 + uSeed) * 0.3;
+    float lb = dot(col, vec3(0.2126, 0.7152, 0.0722));
+    float k = 0.36 + 0.3 * smoothstep(0.25, 0.85, pat.w) - 0.24 * smoothstep(0.35, 0.9, fur.z) + (wisp - 0.5) * 0.6;
+    k *= mix(1.0, 0.6, smoothstep(0.05, 0.3, lb));
+    col = mix(col, vec3(0.8, 0.82, 0.86), clamp(k * mix(1.25, 0.75, h), 0.0, 0.85));
   }
   float ang = atan(abs(p.x), p.y - 0.098);
   col *= mix(0.9, 1.04, smoothstep(0.2, 1.4, ang) * (1.0 - pat.z));
