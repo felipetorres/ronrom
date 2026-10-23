@@ -1,0 +1,253 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'sha256-lRjxGbbZK0beOT/ENOXy8LpwvQW+EpIpuwYGQkZ/aS4=' 'sha256-SidCMP7lPxa9vVUaPXXwz4cDJ4WJVI7Qv78bPYQNiIY='; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; font-src 'self'; connect-src 'self' https://byalneictaqokspggjzn.supabase.co wss://byalneictaqokspggjzn.supabase.co; frame-src 'none'; worker-src 'self'; manifest-src 'self'; object-src 'none'; base-uri 'none'; form-action 'self'">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<style id="framed">html{display:none}</style>
+<script>if(self===top)document.getElementById('framed').remove()</script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ronrom · Privacidade</title>
+<link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32.png">
+<style>
+@font-face {
+  font-family: 'Baloo 2';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(fonts/baloo2-224589.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'Baloo 2';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(fonts/baloo2-224589.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'Baloo 2';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(fonts/baloo2-224589.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'Baloo 2';
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url(fonts/baloo2-224589.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'DM Mono';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(fonts/dmmono-42078d.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'DM Mono';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(fonts/dmmono-9bb717.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(fonts/nunito-b8db19.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(fonts/nunito-b8db19.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(fonts/nunito-b8db19.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url(fonts/nunito-b8db19.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+body{margin:0;background:#151020;color:#fdf8f0;font-family:'Nunito',system-ui,sans-serif;line-height:1.6}main{max-width:760px;margin:0 auto;padding:24px 20px 64px}nav{display:flex;gap:14px;flex-wrap:wrap;align-items:center;margin-bottom:18px}nav .home{margin-right:auto;font-weight:800;color:#ffc85a;text-decoration:none}nav a[data-to]{color:#c9bfd8;text-decoration:none;font-weight:700}nav a.on{color:#fdf8f0;text-decoration:underline;text-underline-offset:3px}h1,h2{font-family:'Baloo 2','Nunito',sans-serif}h1{font-size:26px;line-height:1.25;margin:0 0 4px}h2{font-size:18px;margin:28px 0 6px}.date{margin:0;color:#c9bfd8;font-size:14px}a{color:#ffc85a}li{margin:4px 0}b{color:#fff}
+</style>
+</head>
+<body>
+<main>
+<nav><a class="home" href="./">Ronrom</a><a href="#pt" data-to="pt">Português</a><a href="#en" data-to="en">English</a><a href="#es" data-to="es">Español</a></nav>
+<article data-lang="pt">
+<h1>Política de privacidade do Ronrom</h1>
+<p class="date">Atualizada em 22 de outubro de 2026</p>
+<p>O Ronrom é um jogo da TestLabs, estúdio independente no Brasil, que é a controladora dos dados descritos aqui. Dúvidas e pedidos: <a href="mailto:testlabs.games@gmail.com">testlabs.games@gmail.com</a>.</p>
+
+<h2>O que o jogo guarda</h2>
+<ul>
+<li><b>Conta:</b> um identificador criado na primeira vez que você joga, sem nome nem e-mail, e o seu código de amigo.</li>
+<li><b>Conta Google, se você vincular:</b> o e-mail, o nome e a foto que o Google envia no login. O jogo usa só o e-mail, para mostrar qual conta está vinculada.</li>
+<li><b>Progresso:</b> gatos e os nomes que você dá, moedas, itens, missões, nível, álbum, cidades visitadas e a sua posição no mundo do jogo, que não tem relação com a sua localização real.</li>
+<li><b>Recursos com outras pessoas:</b> lista de amigos, propostas de troca, presentes com o nome de remetente e a mensagem que você escrever, denúncias que você fizer e convites para passear em dupla. As frases rápidas da dupla não são guardadas.</li>
+<li><b>Compras:</b> pacote, valor, data, situação e os números do pedido no Google Play ou no Stripe. O jogo não recebe dados do seu cartão.</li>
+<li><b>Dados técnicos:</b> a versão do jogo e um registro dos pedidos ao servidor, apagado em 2 dias, usado contra abuso. Os provedores abaixo também registram o endereço IP e o navegador, pelo prazo deles.</li>
+<li><b>No aparelho:</b> ajustes, idioma, a sessão de login e uma cópia do jogo para abrir mais rápido e funcionar sem internet.</li>
+</ul>
+<p>O Ronrom não tem anúncios e não usa ferramentas de análise ou de rastreamento.</p>
+
+<h2>Para que usa</h2>
+<ul>
+<li>Fazer o jogo funcionar e guardar o seu progresso (execução do serviço).</li>
+<li>Amigos, trocas, presentes e passeio em dupla, que você usa quando quiser.</li>
+<li>Evitar trapaça e abuso: limite de pedidos, moderação de nomes e mensagens e suspensão de contas (legítimo interesse).</li>
+<li>Processar compras e estornos e guardar os registros que a lei pede (obrigação legal).</li>
+<li>Responder quando você entra em contato.</li>
+</ul>
+
+<h2>Quem vê o quê</h2>
+<ul>
+<li><b>Seus amigos</b> veem seu código, seus gatos e quando você está jogando. Em dupla, o amigo vê a sua posição no mundo do jogo e os gatos que andam com você.</li>
+<li><b>Quem abre um link de presente</b> vê o gato, o nome de remetente e a mensagem.</li>
+<li><b>Prestadores de serviço</b> que tratam dados por conta do jogo: Supabase (servidor e banco de dados, nos Estados Unidos), GitHub (hospedagem do site), Google (login com Google e compras no Google Play), Stripe (compras pelo site) e Cloudflare (verificação contra robôs, quando ativada). Isso implica transferência de dados para fora do Brasil, feita com esses provedores, que adotam padrões de proteção compatíveis com a LGPD.</li>
+</ul>
+<p>Os dados não são vendidos nem usados para publicidade.</p>
+
+<h2>Por quanto tempo</h2>
+<p>Enquanto a conta existir. Ao excluir a conta, tudo o que está ligado a ela é apagado na hora. Os registros de compra continuam por até 5 anos, sem ligação com a conta, para fins fiscais e de estorno.</p>
+
+<h2>Seus direitos</h2>
+<p>Pela LGPD (e pelo GDPR, se você estiver na Europa), você pode pedir confirmação e acesso aos seus dados, correção, cópia, exclusão e informação sobre com quem eles são compartilhados, e reclamar à Autoridade Nacional de Proteção de Dados (ANPD) ou à autoridade do seu país. Escreva para o e-mail acima. Para excluir a conta, veja <a href="excluir-conta.html">como excluir a conta</a>.</p>
+
+<h2>Idade</h2>
+<p>O Ronrom não é destinado a menores de 13 anos. Entre 13 e 18 anos, jogue com autorização de um responsável, principalmente para compras. Se uma conta de menor de 13 anos for identificada, ela será excluída.</p>
+
+<h2>Segurança</h2>
+<p>A comunicação é sempre criptografada (HTTPS), e cada jogador só consegue ler os próprios dados no servidor.</p>
+
+<h2>Mudanças</h2>
+<p>Se esta política mudar, a data no topo muda junto, e mudanças importantes serão avisadas no jogo.</p>
+</article>
+
+<article data-lang="en" hidden>
+<h1>Ronrom privacy policy</h1>
+<p class="date">Updated on October 22, 2026</p>
+<p>Ronrom is a game by TestLabs, an independent studio in Brazil, which is the controller of the data described here. Questions and requests: <a href="mailto:testlabs.games@gmail.com">testlabs.games@gmail.com</a>.</p>
+
+<h2>What the game stores</h2>
+<ul>
+<li><b>Account:</b> an identifier created the first time you play, with no name or email, and your friend code.</li>
+<li><b>Google account, if you link one:</b> the email, name and photo that Google sends at sign-in. The game only uses the email, to show which account is linked.</li>
+<li><b>Progress:</b> cats and the names you give them, coins, items, missions, level, album, towns visited and your position in the game world, which has nothing to do with your real location.</li>
+<li><b>Features with other people:</b> friend list, trade offers, gifts with the sender name and the message you write, reports you file and invitations to explore together. Quick phrases sent while exploring together are not stored.</li>
+<li><b>Purchases:</b> pack, amount, date, status and the order numbers from Google Play or Stripe. The game never receives your card details.</li>
+<li><b>Technical data:</b> the game version and a log of requests to the server, deleted after 2 days and used against abuse. The providers below also log IP address and browser, for their own retention period.</li>
+<li><b>On your device:</b> settings, language, your sign-in session and a copy of the game so it opens faster and works offline.</li>
+</ul>
+<p>Ronrom has no ads and uses no analytics or tracking tools.</p>
+
+<h2>What it is used for</h2>
+<ul>
+<li>Running the game and saving your progress (performance of the service).</li>
+<li>Friends, trades, gifts and exploring together, which you use when you choose to.</li>
+<li>Preventing cheating and abuse: request limits, moderation of names and messages and account suspension (legitimate interest).</li>
+<li>Processing purchases and refunds and keeping the records the law requires (legal obligation).</li>
+<li>Answering you when you get in touch.</li>
+</ul>
+
+<h2>Who sees what</h2>
+<ul>
+<li><b>Your friends</b> see your code, your cats and when you are playing. While exploring together, your friend sees your position in the game world and the cats walking with you.</li>
+<li><b>Anyone who opens a gift link</b> sees the cat, the sender name and the message.</li>
+<li><b>Service providers</b> that process data on behalf of the game: Supabase (server and database, in the United States), GitHub (website hosting), Google (Google sign-in and Google Play purchases), Stripe (website purchases) and Cloudflare (bot check, when enabled). This involves transferring data outside Brazil to these providers, which apply protection standards compatible with Brazil's LGPD.</li>
+</ul>
+<p>Data is never sold or used for advertising.</p>
+
+<h2>How long</h2>
+<p>For as long as the account exists. When you delete your account, everything linked to it is erased right away. Purchase records are kept for up to 5 years, no longer linked to the account, for tax and refund purposes.</p>
+
+<h2>Your rights</h2>
+<p>Under Brazil's LGPD (and the GDPR, if you are in Europe), you can ask for confirmation of and access to your data, correction, a copy, deletion and information about who it is shared with, and you can complain to Brazil's data protection authority (ANPD) or to the authority in your country. Write to the email above. To delete your account, see <a href="excluir-conta.html#en">how to delete your account</a>.</p>
+
+<h2>Age</h2>
+<p>Ronrom is not meant for children under 13. Between 13 and 18, play with permission from a parent or guardian, especially for purchases. If an account belonging to a child under 13 is identified, it will be deleted.</p>
+
+<h2>Security</h2>
+<p>All communication is encrypted (HTTPS), and each player can only read their own data on the server.</p>
+
+<h2>Changes</h2>
+<p>If this policy changes, the date at the top changes too, and important changes will be announced in the game.</p>
+</article>
+
+<article data-lang="es" hidden>
+<h1>Política de privacidad de Ronrom</h1>
+<p class="date">Actualizada el 22 de octubre de 2026</p>
+<p>Ronrom es un juego de TestLabs, estudio independiente en Brasil, que es el responsable de los datos descritos aquí. Dudas y solicitudes: <a href="mailto:testlabs.games@gmail.com">testlabs.games@gmail.com</a>.</p>
+
+<h2>Qué guarda el juego</h2>
+<ul>
+<li><b>Cuenta:</b> un identificador creado la primera vez que juegas, sin nombre ni correo, y tu código de amigo.</li>
+<li><b>Cuenta de Google, si la vinculas:</b> el correo, el nombre y la foto que Google envía al iniciar sesión. El juego solo usa el correo, para mostrar qué cuenta está vinculada.</li>
+<li><b>Progreso:</b> gatos y los nombres que les das, monedas, objetos, misiones, nivel, álbum, pueblos visitados y tu posición en el mundo del juego, que no tiene relación con tu ubicación real.</li>
+<li><b>Funciones con otras personas:</b> lista de amigos, propuestas de intercambio, regalos con el nombre del remitente y el mensaje que escribas, denuncias que hagas e invitaciones a pasear juntos. Las frases rápidas del paseo no se guardan.</li>
+<li><b>Compras:</b> paquete, valor, fecha, estado y los números de pedido de Google Play o Stripe. El juego no recibe los datos de tu tarjeta.</li>
+<li><b>Datos técnicos:</b> la versión del juego y un registro de las solicitudes al servidor, borrado en 2 días y usado contra el abuso. Los proveedores de abajo también registran la dirección IP y el navegador, por el plazo que ellos definen.</li>
+<li><b>En tu dispositivo:</b> ajustes, idioma, la sesión iniciada y una copia del juego para abrir más rápido y funcionar sin internet.</li>
+</ul>
+<p>Ronrom no tiene anuncios y no usa herramientas de análisis ni de rastreo.</p>
+
+<h2>Para qué se usa</h2>
+<ul>
+<li>Hacer funcionar el juego y guardar tu progreso (ejecución del servicio).</li>
+<li>Amigos, intercambios, regalos y paseo en pareja, que usas cuando quieras.</li>
+<li>Evitar trampas y abusos: límite de solicitudes, moderación de nombres y mensajes y suspensión de cuentas (interés legítimo).</li>
+<li>Procesar compras y reembolsos y guardar los registros que exige la ley (obligación legal).</li>
+<li>Responderte cuando te comuniques.</li>
+</ul>
+
+<h2>Quién ve qué</h2>
+<ul>
+<li><b>Tus amigos</b> ven tu código, tus gatos y cuándo estás jugando. Al pasear juntos, tu amigo ve tu posición en el mundo del juego y los gatos que te acompañan.</li>
+<li><b>Quien abre un enlace de regalo</b> ve el gato, el nombre del remitente y el mensaje.</li>
+<li><b>Proveedores de servicios</b> que tratan datos por cuenta del juego: Supabase (servidor y base de datos, en Estados Unidos), GitHub (alojamiento del sitio), Google (inicio de sesión con Google y compras en Google Play), Stripe (compras en el sitio) y Cloudflare (verificación contra robots, cuando está activa). Esto implica transferir datos fuera de Brasil a estos proveedores, que aplican estándares de protección compatibles con la LGPD de Brasil.</li>
+</ul>
+<p>Los datos no se venden ni se usan para publicidad.</p>
+
+<h2>Por cuánto tiempo</h2>
+<p>Mientras exista la cuenta. Al eliminar la cuenta, todo lo vinculado a ella se borra en el momento. Los registros de compra se guardan hasta 5 años, sin vínculo con la cuenta, con fines fiscales y de reembolso.</p>
+
+<h2>Tus derechos</h2>
+<p>Según la LGPD de Brasil (y el GDPR, si estás en Europa), puedes pedir confirmación y acceso a tus datos, corrección, una copia, eliminación e información sobre con quién se comparten, y reclamar ante la autoridad brasileña de protección de datos (ANPD) o la de tu país. Escribe al correo de arriba. Para eliminar la cuenta, mira <a href="excluir-conta.html#es">cómo eliminar la cuenta</a>.</p>
+
+<h2>Edad</h2>
+<p>Ronrom no está dirigido a menores de 13 años. Entre 13 y 18 años, juega con permiso de un adulto responsable, sobre todo para compras. Si se identifica una cuenta de un menor de 13 años, será eliminada.</p>
+
+<h2>Seguridad</h2>
+<p>La comunicación siempre va cifrada (HTTPS), y cada jugador solo puede leer sus propios datos en el servidor.</p>
+
+<h2>Cambios</h2>
+<p>Si esta política cambia, la fecha de arriba cambia también, y los cambios importantes se avisarán en el juego.</p>
+</article>
+
+</main>
+<script>const L=['pt','en','es'];const show=(l)=>{for(const s of document.querySelectorAll('[data-lang]'))s.hidden=s.dataset.lang!==l;for(const a of document.querySelectorAll('[data-to]'))a.classList.toggle('on',a.dataset.to===l);document.documentElement.lang=l==='pt'?'pt-BR':l;};const want=(location.hash.slice(1)||navigator.language||'pt').slice(0,2).toLowerCase();show(L.includes(want)?want:'en');for(const a of document.querySelectorAll('[data-to]'))a.addEventListener('click',(e)=>{e.preventDefault();show(a.dataset.to);history.replaceState(null,'','#'+a.dataset.to);});</script>
+</body>
+</html>

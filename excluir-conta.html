@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'sha256-lRjxGbbZK0beOT/ENOXy8LpwvQW+EpIpuwYGQkZ/aS4=' 'sha256-SidCMP7lPxa9vVUaPXXwz4cDJ4WJVI7Qv78bPYQNiIY='; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; font-src 'self'; connect-src 'self' https://byalneictaqokspggjzn.supabase.co wss://byalneictaqokspggjzn.supabase.co; frame-src 'none'; worker-src 'self'; manifest-src 'self'; object-src 'none'; base-uri 'none'; form-action 'self'">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<style id="framed">html{display:none}</style>
+<script>if(self===top)document.getElementById('framed').remove()</script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ronrom · Excluir conta</title>
+<link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32.png">
+<style>
+@font-face {
+  font-family: 'Baloo 2';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(fonts/baloo2-224589.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'Baloo 2';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(fonts/baloo2-224589.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'Baloo 2';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(fonts/baloo2-224589.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'Baloo 2';
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url(fonts/baloo2-224589.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'DM Mono';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(fonts/dmmono-42078d.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'DM Mono';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(fonts/dmmono-9bb717.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(fonts/nunito-b8db19.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(fonts/nunito-b8db19.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(fonts/nunito-b8db19.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url(fonts/nunito-b8db19.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+body{margin:0;background:#151020;color:#fdf8f0;font-family:'Nunito',system-ui,sans-serif;line-height:1.6}main{max-width:760px;margin:0 auto;padding:24px 20px 64px}nav{display:flex;gap:14px;flex-wrap:wrap;align-items:center;margin-bottom:18px}nav .home{margin-right:auto;font-weight:800;color:#ffc85a;text-decoration:none}nav a[data-to]{color:#c9bfd8;text-decoration:none;font-weight:700}nav a.on{color:#fdf8f0;text-decoration:underline;text-underline-offset:3px}h1,h2{font-family:'Baloo 2','Nunito',sans-serif}h1{font-size:26px;line-height:1.25;margin:0 0 4px}h2{font-size:18px;margin:28px 0 6px}.date{margin:0;color:#c9bfd8;font-size:14px}a{color:#ffc85a}li{margin:4px 0}b{color:#fff}
+</style>
+</head>
+<body>
+<main>
+<nav><a class="home" href="./">Ronrom</a><a href="#pt" data-to="pt">Português</a><a href="#en" data-to="en">English</a><a href="#es" data-to="es">Español</a></nav>
+<article data-lang="pt">
+<h1>Como excluir a sua conta do Ronrom</h1>
+<p class="date">Atualizado em 22 de outubro de 2026</p>
+
+<h2>No jogo</h2>
+<ol>
+<li>Abra o Ronrom e toque em <b>Menu</b> (no computador, aperte <b>Esc</b>).</li>
+<li>Toque em <b>Excluir conta</b>, embaixo dos ajustes (no celular, fica na aba <b>Conta</b>).</li>
+<li>Confirme em <b>Excluir para sempre</b>.</li>
+</ol>
+<p>A exclusão é imediata. Se a sua conta está vinculada ao Google e você não tem mais o jogo no aparelho, abra o jogo em <a href="./">felipetorres.github.io/ronrom</a>, entre com a mesma conta Google e siga os passos acima.</p>
+
+<h2>Por e-mail</h2>
+<p>Se não conseguir pelo jogo, escreva para <a href="mailto:testlabs.games@gmail.com?subject=Excluir%20conta%20do%20Ronrom">testlabs.games@gmail.com</a> com o assunto "Excluir conta do Ronrom" e informe o seu código de amigo (fica em Gatil › Trocas) ou o e-mail da conta Google vinculada. O pedido é atendido em até 15 dias, e você recebe a confirmação por e-mail.</p>
+
+<h2>O que é apagado</h2>
+<p>A conta, os gatos, as moedas, os itens, o progresso, os amigos, as propostas de troca, os presentes não resgatados, os convites para passear e o vínculo com o Google. Gatos que você deu ou trocou continuam com quem os recebeu.</p>
+
+<h2>O que fica</h2>
+<p>Os registros de compra ficam por até 5 anos, sem ligação com a conta, para fins fiscais e de estorno. Os registros técnicos dos provedores do servidor somem no prazo deles, em geral de poucos dias.</p>
+</article>
+
+<article data-lang="en" hidden>
+<h1>How to delete your Ronrom account</h1>
+<p class="date">Updated on October 22, 2026</p>
+
+<h2>In the game</h2>
+<ol>
+<li>Open Ronrom and tap <b>Menu</b> (on a computer, press <b>Esc</b>).</li>
+<li>Tap <b>Delete account</b>, below the settings (on phones, it is in the <b>Account</b> tab).</li>
+<li>Confirm with <b>Delete forever</b>.</li>
+</ol>
+<p>Deletion is immediate. If your account is linked to Google and you no longer have the game on your device, open the game at <a href="./">felipetorres.github.io/ronrom</a>, sign in with the same Google account and follow the steps above.</p>
+
+<h2>By email</h2>
+<p>If you can't do it in the game, write to <a href="mailto:testlabs.games@gmail.com?subject=Delete%20my%20Ronrom%20account">testlabs.games@gmail.com</a> with the subject "Delete my Ronrom account" and include your friend code (in Cattery › Trades) or the email of the linked Google account. The request is handled within 15 days, and you get a confirmation by email.</p>
+
+<h2>What is deleted</h2>
+<p>The account, cats, coins, items, progress, friends, trade offers, unclaimed gifts, invitations to explore together and the Google link. Cats you gave away or traded stay with whoever received them.</p>
+
+<h2>What is kept</h2>
+<p>Purchase records are kept for up to 5 years, no longer linked to the account, for tax and refund purposes. Technical logs kept by the server providers expire on their own schedule, usually within a few days.</p>
+</article>
+
+<article data-lang="es" hidden>
+<h1>Cómo eliminar tu cuenta de Ronrom</h1>
+<p class="date">Actualizado el 22 de octubre de 2026</p>
+
+<h2>En el juego</h2>
+<ol>
+<li>Abre Ronrom y toca <b>Menú</b> (en la computadora, presiona <b>Esc</b>).</li>
+<li>Toca <b>Eliminar cuenta</b>, debajo de los ajustes (en el celular, está en la pestaña <b>Cuenta</b>).</li>
+<li>Confirma con <b>Eliminar para siempre</b>.</li>
+</ol>
+<p>La eliminación es inmediata. Si tu cuenta está vinculada a Google y ya no tienes el juego en el dispositivo, abre el juego en <a href="./">felipetorres.github.io/ronrom</a>, inicia sesión con la misma cuenta de Google y sigue los pasos de arriba.</p>
+
+<h2>Por correo</h2>
+<p>Si no puedes hacerlo en el juego, escribe a <a href="mailto:testlabs.games@gmail.com?subject=Eliminar%20mi%20cuenta%20de%20Ronrom">testlabs.games@gmail.com</a> con el asunto "Eliminar mi cuenta de Ronrom" e indica tu código de amigo (en Gatería › Intercambios) o el correo de la cuenta de Google vinculada. La solicitud se atiende en un plazo de 15 días, y recibes la confirmación por correo.</p>
+
+<h2>Qué se borra</h2>
+<p>La cuenta, los gatos, las monedas, los objetos, el progreso, los amigos, las propuestas de intercambio, los regalos no reclamados, las invitaciones a pasear y el vínculo con Google. Los gatos que regalaste o intercambiaste siguen con quien los recibió.</p>
+
+<h2>Qué se conserva</h2>
+<p>Los registros de compra se guardan hasta 5 años, sin vínculo con la cuenta, con fines fiscales y de reembolso. Los registros técnicos de los proveedores del servidor vencen en el plazo de ellos, por lo general en pocos días.</p>
+</article>
+
+</main>
+<script>const L=['pt','en','es'];const show=(l)=>{for(const s of document.querySelectorAll('[data-lang]'))s.hidden=s.dataset.lang!==l;for(const a of document.querySelectorAll('[data-to]'))a.classList.toggle('on',a.dataset.to===l);document.documentElement.lang=l==='pt'?'pt-BR':l;};const want=(location.hash.slice(1)||navigator.language||'pt').slice(0,2).toLowerCase();show(L.includes(want)?want:'en');for(const a of document.querySelectorAll('[data-to]'))a.addEventListener('click',(e)=>{e.preventDefault();show(a.dataset.to);history.replaceState(null,'','#'+a.dataset.to);});</script>
+</body>
+</html>
